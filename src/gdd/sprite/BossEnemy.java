@@ -38,9 +38,9 @@ public class BossEnemy extends Enemy {
         }
     
         // Smoother side-to-side movement
-        this.x += Math.cos(this.y / 60.0) * 1; // Reduced from 3 to 2 and increased divisor
+        this.x += Math.cos(this.y / 60.0) * 1; 
     
-        // Bomb firing logic (less frequent)
+        // Bomb firing logic
         bombTimer++;
         if (bombTimer % BOSS_BOMB_INTERVAL == 0) {
             fireBombVolley();
